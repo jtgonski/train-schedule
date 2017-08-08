@@ -27,8 +27,8 @@ $("#add-train").on("click", function(event) {
     //grab train frequency 
     var trainFrequency = $("#trainFrequency").val().trim(); 
 
-    if (isNaN(parseInt(trainFrequency))) {
-      alert("please enter time in military time");
+    if (isNaN(trainFrequency)) {
+      alert("Please enter frequency in Minutes");
     } 
     else if (firstTrainTime.length !== 5 || firstTrainTime[0] > 2 || firstTrainTime[2] !== ":" || firstTrainTime[3] > 5) {
       alert("please enter time in military time");
